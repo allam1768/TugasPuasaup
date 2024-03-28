@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/ijotuabet" />
+    <corners android:radius="30dp" /> <!-- Ubah angka 16 sesuai dengan tingkat radius yang Anda inginkan -->
+</shape>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/pink"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bangun_ruang.Tabung">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="236sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/tabungtxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="175sp"
+        android:layout_height="175sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/tabungxml"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@drawable/bawahnya"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="125sp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/hitung"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView2" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="179sp"
+        android:layout_height="49sp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/backhasil"
+        android:fontFamily="@font/blm"
+        android:gravity="center"
+        android:text="Hasil"
+        android:textColor="@color/ijotuabet"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@id/imageView5"
+        app:layout_constraintStart_toStartOf="@id/imageView5"
+        app:layout_constraintTop_toTopOf="@id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="350dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/backinput"
+        app:layout_constraintEnd_toEndOf="@id/imageView5"
+        app:layout_constraintStart_toStartOf="@id/imageView5"
+        app:layout_constraintTop_toBottomOf="@id/total" />
+
+    <EditText
+        android:id="@+id/inputJarijari"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="number"
+        android:fontFamily="@font/blm"
+        android:gravity="center"
+        android:hint="masukkan panjang jari jarinya"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/imageView4"
+        app:layout_constraintStart_toStartOf="@id/imageView4"
+        app:layout_constraintTop_toTopOf="@id/imageView4" />
+
+    <EditText
+        android:id="@+id/inputTinggi"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="number"
+        android:fontFamily="@font/blm"
+        android:gravity="center"
+        android:hint="masukkan tingginya"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/imageView4"
+        app:layout_constraintStart_toStartOf="@id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/inputJarijari" />
+
+    <ImageView
+        android:id="@+id/btn_hasil"
+        android:layout_width="138sp"
+        android:layout_height="52sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/hasilnya"
+        app:layout_constraintBottom_toBottomOf="@id/imageView5"
+        app:layout_constraintEnd_toEndOf="@id/imageView5"
+        app:layout_constraintTop_toBottomOf="@id/imageView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

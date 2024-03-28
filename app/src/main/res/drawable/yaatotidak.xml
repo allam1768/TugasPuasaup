@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" /> <!-- Warna latar belakang -->
+            <stroke
+                android:width="2dp"
+                android:color="@color/pink" /> <!-- Warna pinggiran -->
+            <corners android:radius="50dp" /> <!-- Radius sudut -->
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8DE"
+
+    tools:context=".bangun_datar.Trapesium">
+
+    <TextView
+        android:id="@+id/xmltrapesium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:fontFamily="@font/blm"
+        android:text="Luas Trapesium"
+        android:textColor="@color/ijotuabet"
+        android:textSize="42dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/rumus"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rumus_trapesium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xmltrapesium" />
+
+    <TextView
+        android:id="@+id/txthasil"
+        android:layout_width="305dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/blm"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txthitung" />
+
+    <TextView
+        android:id="@+id/txthitung"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/blm"
+        android:text="Hitung"
+        android:textAlignment="center"
+        android:textColor="@color/ijotuabet"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rumus" />
+
+
+    <EditText
+        android:id="@+id/inputPanjangAtas"
+        android:layout_width="312dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/blm"
+        android:hint="masukkan panjang sisi atas"
+        android:inputType="number"
+        android:maxLength="5"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txthasil" />
+
+    <EditText
+        android:id="@+id/inputTinggi"
+        android:layout_width="312dp"
+        android:layout_height="42dp"
+        android:fontFamily="@font/blm"
+        android:hint="masukkan tingginya"
+        android:inputType="number"
+        android:maxLength="5"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputPanjangBawah" />
+
+    <EditText
+        android:id="@+id/inputPanjangBawah"
+        android:layout_width="312dp"
+        android:layout_height="42dp"
+        android:fontFamily="@font/blm"
+        android:hint="masukkan panjang sisi bawah"
+        android:inputType="number"
+        android:maxLength="5"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputPanjangAtas" />
+
+    <Button
+        android:id="@+id/btn_hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/home"
+        android:backgroundTint="@color/ijotuabet"
+        android:fontFamily="@font/blm"
+        android:text="Hasil"
+        android:textColor="@color/ijo"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputTinggi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

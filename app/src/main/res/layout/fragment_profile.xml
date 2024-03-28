@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ijotuabet"
+    tools:context=".fragment.BangunRuangFragment">
+
+    <ImageView
+        android:id="@+id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="440sp"
+        android:background="@drawable/ats1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/bawah"
+        android:layout_width="match_parent"
+        android:layout_height="625sp"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/bawah"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/Profile"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_marginTop="-250dp"
+        android:layout_marginBottom="-80dp"
+        android:background="@drawable/pb"
+        app:layout_constraintBottom_toTopOf="@+id/bawah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atas"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btnlogout"
+        android:fontFamily="@font/blm"
+        android:text="Log Out"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/blm"
+        android:text="ALLAM PERMATA PUTRA \n 10 PPLG 1 \n \n allambelajar@gmail.com"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="@color/ijotuabet"
+        app:layout_constraintEnd_toEndOf="@id/bawah"
+        app:layout_constraintStart_toStartOf="@id/bawah"
+        app:layout_constraintTop_toBottomOf="@+id/Profile" />
+</androidx.constraintlayout.widget.ConstraintLayout>

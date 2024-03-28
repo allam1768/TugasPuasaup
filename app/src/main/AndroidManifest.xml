@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_home"
+        android:label="Tugas Puasa"
+        android:roundIcon="@drawable/block"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TugasPuasa"
+        tools:targetApi="31">
+        <activity
+            android:name=".bangun_ruang.Tabung"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".bangun_datar.segiempat"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bangun_datar.Trapesium"
+            android:exported="false" />
+        <activity
+            android:name=".bangun_datar.Jajargenjang"
+            android:exported="false" />
+        <activity
+            android:name=".bangun_datar.Lingkaran"
+            android:exported="false" />
+        <activity
+            android:name=".bangun_datar.Segitiga"
+            android:exported="false" />
+        <activity
+            android:name=".bangun_datar.Prsegi_panjang"
+            android:exported="false" />
+        <activity
+            android:name=".bangun_ruang.Balok"
+            android:exported="false" />
+        <activity
+            android:name=".bangun_ruang.Bola"
+            android:exported="false" />
+        <activity
+            android:name=".bangun_ruang.Kubus"
+            android:exported="false" />
+        <activity
+            android:name=".bangun_ruang.Kerucut"
+            android:exported="false" />
+        <activity
+            android:name=".bangun_ruang.Limas"
+            android:exported="false" />
+
+        <activity
+            android:name=".Home"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
